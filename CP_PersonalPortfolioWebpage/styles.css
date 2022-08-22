@@ -1,0 +1,154 @@
+:root {
+    --found-red: rgb(233,55,77);
+    --found-grey: #333;
+    --found-blue: rgb(70, 90, 140);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+      box-sizing: border-box;
+      font-size: 62.5%;
+  }
+  
+  body {
+      font-family: sans-serif; 
+      line-height: 2;
+      text-align: center;
+      color: white;
+    }
+  
+  h1 {
+    font-size: 5rem;
+  }
+  
+  h2 {
+    font-size: 3.4rem;
+    text-decoration: underline;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  #navbar {
+      display: flex;
+      justify-content: flex-end;
+      position: fixed; /*para siempre tener la barra a medida que bajas por la pagina*/
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: var(--found-red);
+      /*z-index: 10;*/
+    }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin-right: 2rem;
+    
+  }
+  
+  .nav-list a {
+    font-size: 2.1rem;
+    padding: 10;
+  }
+  
+  #welcome-section {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(225deg, black 0%, black 15%, var(--found-grey) 85%);
+  }
+  
+    #welcome-section > p {
+      font-size: 2rem;
+      font-style: italic;
+      color: var(--found-red);
+    }
+  
+    #projects {
+      text-align: center;
+      padding: 5rem 2rem;
+      background: var(--found-blue);
+    }
+  
+    .projects-header {
+      max-width: 640px;
+      margin: 0 auto 3rem auto;
+    }
+  
+    .project {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 4rem;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      margin-bottom: 6rem;
+    }
+  
+    @media (max-width: 320px) {
+      .project {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    .project-image {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .project-title {
+      font-size: 2rem;
+      padding: 2rem 0.5rem;
+      background-color: var(--found-grey);
+    }
+  
+    #contact {
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--found-grey);
+    }
+  
+    #contact > header {
+      font-size: 4rem;
+      font-weight: 650;
+    }
+  
+    #contact > p {
+      font-size: 2rem;
+      font-style: italic;
+    }
+  
+    #contact > a {
+      font-size: 1.5rem;
+    } 
+  
+    footer {
+      border-top: solid var(--found-red);
+      width: 100%;
+      height: 20vh;
+      background-color: var(--found-grey);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+   footer > p {
+      text-align: left;
+      padding: 20px;
+      font-size: 1.3rem;
+    }

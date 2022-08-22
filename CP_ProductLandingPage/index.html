@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!--HEAD-->
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <!--BODY-->
+  <body>
+
+    <!--Header-->
+    <header id="header">
+
+      <!--a.Image Trombones-->
+      <div class="logo">
+        <img
+          id="header-img"
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+          alt="logo trombones"
+        />
+      </div>
+
+      <!--b.NavBar-->
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#get-started">Get Started</a></li>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+      <!--INPUT: Email-->
+      <section id="get-started">
+        <h2>Handcrafted, home-made masterpieces</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required />
+          <input id="submit" type="submit" value="GET STARTED"/>
+        </form>
+      </section>
+
+      <!--Features-->
+      <section id="features">
+        <h3 class="features-header">Premium Materials</h3>
+        <p class="features-text">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        
+      <h3 class="features-header">Fast Shipping</h3>
+      <p class="features-text">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+
+      <h3 class="features-header">Quality Assurance</h3>
+      <p class="features-text">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument</p>
+    </section>
+
+    <!--Video-->   
+    <section id="how-it-works">
+        <iframe
+          id="video"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
+  </body>
+</html>
